@@ -25,6 +25,7 @@ You can install WalletConnector via npm:
 
 ```bash
 npm install wallet-connector
+```
 
 ## Usage
 
@@ -34,12 +35,12 @@ To use the `WalletConnector` in your project, follow these steps:
 
 ```javascript
 import WalletConnector from 'wallet-connector';
-
+```
 2. **Create an instance of the WalletConnector**
 
 ```javascript
 const connector = new WalletConnector();
-
+```
 3. **Connect to a wallet**
 
 
@@ -55,7 +56,7 @@ const connectWallet = async () => {
     console.error('Failed to connect wallet.');
   }
 };
-
+```
 4. **Send Transaction**
 
 
@@ -74,8 +75,8 @@ const sendTransaction = async () => {
 
 connectWallet();
 sendTransaction();
-
-4. **Interact with a smart contract**
+```
+5. **Interact with a smart contract**
 
 
 ```javascript
@@ -108,7 +109,7 @@ const sendContractTx = async () => {
 // Call the functions
 getData();
 sendContractTx();
-
+```
 
 
 ### Key Points:
