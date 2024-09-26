@@ -117,15 +117,20 @@ sendContractTx();
 - Feel free to modify the addresses, method names, and parameters in the code examples as per your application's requirements!
 
 
-### Supported Wallets:
+## Supported Wallets
+
 WalletConnector currently supports the following wallets:
 
-- MetaMask: Connect via MetaMask.
-- Trust Wallet: Connect via Trust Wallet deep link.
-- Coinbase Wallet: Connect via Coinbase Wallet.
-- Phantom Wallet: Connect via Phantom Wallet deep link.
-- Rainbow Wallet: Connect via Rainbow Wallet deep link.
-- Feel free to add support for additional wallets by extending the wallets object.
+| Wallet          | Icon                                     | Deep Link                                           |
+|------------------|------------------------------------------|----------------------------------------------------|
+| **MetaMask**     | ![MetaMask](https://www.sketchappsources.com/resources/source-image/metamask-fox-logo.png) | Connect via [MetaMask](https://metamask.app.link/dapp/) |
+| **Trust Wallet** | ![Trust Wallet](https://logowik.com/content/uploads/images/trust-wallet-shield1721379929.logowik.com.webp) | Connect via Trust Wallet deep link                  |
+| **Coinbase Wallet** | ![Coinbase Wallet](https://cdn.iconscout.com/icon/free/png-256/free-coinbase-logo-icon-download-in-svg-png-gif-file-formats--web-crypro-trading-platform-logos-pack-icons-7651204.png) | Connect via [Coinbase Wallet](https://www.coinbase.com/wallet) |
+| **Phantom Wallet** | ![Phantom Wallet](https://i.pinimg.com/736x/6e/04/09/6e040925d8e4bd2c8eedfb6da4dc2ece.jpg) | Connect via Phantom Wallet deep link                 |
+| **Rainbow Wallet** | ![Rainbow Wallet](https://play-lh.googleusercontent.com/fMUvmUmIpIDoZGTACYohbY3DE7-24GFkQ21WjVHxa57qluzWrr7khkycE8cz_juhew) | Connect via Rainbow Wallet deep link                 |
+
+Feel free to add support for additional wallets by extending the `wallets` object.
+
 
 ### API Reference
 - connect(walletName: string, appUrl: string): Promise<boolean>: Connects to the specified wallet and returns a boolean indicating success.
