@@ -1,4 +1,4 @@
-# WalletConnector
+# Web3WalletConnector
 
 A simple and flexible JavaScript library to connect to various cryptocurrency wallets via deep linking for both mobile and desktop devices. WalletConnector supports multiple wallets, including MetaMask, Trust Wallet, Coinbase Wallet, and more.
 

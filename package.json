@@ -1,5 +1,5 @@
 {
-  "name": "web3mobileconnector",
+  "name": "Web3WalletConnector",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
