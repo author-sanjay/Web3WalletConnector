@@ -25,6 +25,7 @@ You can install WalletConnector via npm:
 
 ```bash
 npm install wallet-connector
+```
 
 ## Usage
 
@@ -34,12 +35,12 @@ To use the `WalletConnector` in your project, follow these steps:
 
 ```javascript
 import WalletConnector from 'wallet-connector';
-
+```
 2. **Create an instance of the WalletConnector**
 
 ```javascript
 const connector = new WalletConnector();
-
+```
 3. **Connect to a wallet**
 
 
@@ -55,7 +56,7 @@ const connectWallet = async () => {
     console.error('Failed to connect wallet.');
   }
 };
-
+```
 4. **Send Transaction**
 
 
@@ -74,8 +75,8 @@ const sendTransaction = async () => {
 
 connectWallet();
 sendTransaction();
-
-4. **Interact with a smart contract**
+```
+5. **Interact with a smart contract**
 
 
 ```javascript
@@ -108,7 +109,7 @@ const sendContractTx = async () => {
 // Call the functions
 getData();
 sendContractTx();
-
+```
 
 
 ### Key Points:
@@ -116,15 +117,21 @@ sendContractTx();
 - Feel free to modify the addresses, method names, and parameters in the code examples as per your application's requirements!
 
 
-### Supported Wallets:
+## Supported Wallets
+
 WalletConnector currently supports the following wallets:
 
-- MetaMask: Connect via MetaMask.
-- Trust Wallet: Connect via Trust Wallet deep link.
-- Coinbase Wallet: Connect via Coinbase Wallet.
-- Phantom Wallet: Connect via Phantom Wallet deep link.
-- Rainbow Wallet: Connect via Rainbow Wallet deep link.
-- Feel free to add support for additional wallets by extending the wallets object.
+| Wallet          | Icon                                     | Deep Link                                           |
+|------------------|------------------------------------------|----------------------------------------------------|
+| **MetaMask**     | <img src="https://www.sketchappsources.com/resources/source-image/metamask-fox-logo.png" alt="MetaMask" width="50" height="50" /> | Connect via [MetaMask](https://metamask.app.link/dapp/) |
+| **Trust Wallet** | <img src="https://logowik.com/content/uploads/images/trust-wallet-shield1721379929.logowik.com.webp" alt="Trust Wallet" width="50" height="50" /> | Connect via [Trust Wallet](trust://wallet/open_url?url=https://example.com) |
+| **Coinbase Wallet** | <img src="https://cdn.iconscout.com/icon/free/png-256/free-coinbase-logo-icon-download-in-svg-png-gif-file-formats--web-crypro-trading-platform-logos-pack-icons-7651204.png" alt="Coinbase Wallet" width="50" height="50" /> | Connect via [Coinbase Wallet](https://www.coinbase.com/wallet) |
+| **Phantom Wallet** | <img src="https://i.pinimg.com/736x/6e/04/09/6e040925d8e4bd2c8eedfb6da4dc2ece.jpg" alt="Phantom Wallet" width="50" height="50" /> | Connect via [Phantom Wallet](https://phantom.app) |
+| **Rainbow Wallet** | <img src="https://play-lh.googleusercontent.com/fMUvmUmIpIDoZGTACYohbY3DE7-24GFkQ21WjVHxa57qluzWrr7khkycE8cz_juhew" alt="Rainbow Wallet" width="50" height="50" /> | Connect via [Rainbow Wallet](rainbow://url?url=https://example.com) |
+
+Feel free to add support for additional wallets by extending the `wallets` object.
+
+
 
 ### API Reference
 - connect(walletName: string, appUrl: string): Promise<boolean>: Connects to the specified wallet and returns a boolean indicating success.
