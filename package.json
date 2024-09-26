@@ -1,14 +1,22 @@
 {
-  "name": "Web3WalletConnector",
+  "name": "hybridweb3walletconnector",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "A simple library to connect to various cryptocurrency wallets in desktop as well as MOBILE.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "wallet",
+    "crypto",
+    "blockchain"
+  ],
+  "author": "Sanjay Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/author-sanjay/Web3WalletConnector.git"
+  },
   "dependencies": {
     "web3": "^4.13.0"
   }
